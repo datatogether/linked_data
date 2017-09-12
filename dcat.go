@@ -92,7 +92,7 @@ type CatalogRecord struct {
 	// A name given to the record.
 	Title string `json:"dct:title"`
 	// free-text account of the record.
-	Description `json:"dct:description,omitempty"`
+	Description string `json:"dct:description,omitempty"`
 	// The date of listing the corresponding dataset in the catalog.
 	Issued time.Time `json:"dct:issued,omitempty"`
 	// Most recent date on which the catalog entry was changed, updated or modified.
@@ -115,7 +115,7 @@ type Dataset struct {
 	// A name given to the dataset.
 	Title string `json:"dct:title"`
 	// free-text account of the dataset.
-	Description `json:"dct:description,omitempty"`
+	Description string `json:"dct:description,omitempty"`
 	// Date of formal issuance (e.g., publication) of the dataset.
 	Issued time.Time `json:"dct:issued,omitempty"`
 	// Most recent date on which the dataset was changed, updated or modified.
@@ -173,7 +173,7 @@ type Distribution struct {
 	// A name given to the distribution.
 	Title string `json:"dct:title"`
 	// free-text account of the distribution.
-	Description `json:"dct:description,omitempty"`
+	Description string `json:"dct:description,omitempty"`
 	// Date of formal issuance (e.g., publication) of the distribution.
 	Issued time.Time `json:"dct:issued,omitempty"`
 	// Most recent date on which the distribution was changed, updated or modified.
