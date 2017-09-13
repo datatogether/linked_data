@@ -67,7 +67,9 @@ type Dataset struct {
 	// Description Human-readable description (e.g., an abstract) with sufficient detail to enable a user to quickly understand whether the asset is of interest.
 	Description string `json:"description" required:"yes"`
 	// Tags  Tags (or keywords) help users discover your dataset; please include terms that would be used by technical and non-technical users.
-	Keyword []string `json:"keyword" required:"yes"`
+	// Keyword []string `json:"keyword" required:"yes"`
+	// TODO - this cause doe data.json so stupid
+	Keyword interface{} `json:"keyword" required:"yes"`
 	// Last Update Most recent date on which the dataset was changed, updated or modified.
 	// @TODO - this is currently a string b/c timestamps aren't stored in proper JSON timestamp format
 	// will need custom JSON marshal/unmarshal
@@ -126,7 +128,7 @@ type Dataset struct {
 	// System of Records If the system is designated as a system of records under the Privacy Act of 1974, provide the URL to the System of Records Notice related to this dataset.
 	SystemOfRecords string `json:"systemOfRecords,omitempty" required:"no"`
 	// Category  Main thematic category of the dataset.
-	Theme string `json:"theme,omitempty" required:"no"`
+	Theme []string `json:"theme,omitempty" required:"no"`
 }
 
 func (d *Dataset) GetId() string {
