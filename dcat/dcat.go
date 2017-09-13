@@ -11,6 +11,7 @@
 package dcat
 
 import (
+	"github.com/datatogether/linked_data"
 	"time"
 )
 
@@ -76,6 +77,10 @@ type Catalog struct {
 
 func (c Catalog) Class() string {
 	return "dcat:Catalog"
+}
+
+func (c *Catalog) GetDatasets() []ld.Dataset {
+	return []ld.Dataset{c.Dataset}
 }
 
 // A record in a data catalog, describing a single dataset.
@@ -161,6 +166,15 @@ type Dataset struct {
 
 func (d Dataset) Class() string {
 	return "dcat:Dataset"
+}
+
+func (d *Dataset) GetId() string {
+	return d.Identifier
+}
+
+func (d *Dataset) GetDistributions() []ld.Distribution {
+	// TODO
+	return nil
 }
 
 // Represents a specific available form of a dataset. Each dataset might be available in different forms,
