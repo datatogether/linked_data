@@ -534,7 +534,7 @@
       "originalMetadata": false,
       "useForPreview": false,
       "s3Object": "",
-      "checksum": "",
+      "checksum": null,
       "url": "https://www.sciencebase.gov/catalog/file/get/55b943ade4b09a3b01b65d78?f=__disk__4e%2F16%2F3e%2F4e163e34992f5013cf32a39bb89c479164db236c"
     },
     {
@@ -552,7 +552,7 @@
       "originalMetadata": true,
       "useForPreview": false,
       "s3Object": "",
-      "checksum": "",
+      "checksum": null,
       "url": "https://www.sciencebase.gov/catalog/file/get/55b943ade4b09a3b01b65d78?f=__disk__ff%2Fb2%2Ff6%2Fffb2f6508d974976745620f1504fc37e794937ba"
     },
     {
@@ -570,7 +570,7 @@
       "originalMetadata": false,
       "useForPreview": false,
       "s3Object": "",
-      "checksum": "",
+      "checksum": null,
       "url": "https://www.sciencebase.gov/catalog/file/get/55b943ade4b09a3b01b65d78?f=__disk__39%2F73%2F76%2F39737632f578722f0845f83a3ca2a4e44a566d54"
     },
     {
@@ -588,7 +588,7 @@
       "originalMetadata": false,
       "useForPreview": false,
       "s3Object": "",
-      "checksum": "",
+      "checksum": null,
       "url": "https://www.sciencebase.gov/catalog/file/get/55b943ade4b09a3b01b65d78?f=__disk__e9%2Fe0%2F03%2Fe9e00337e14080c9454b361c1039afbb2c75eb98"
     }
   ],

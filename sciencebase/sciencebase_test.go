@@ -12,6 +12,7 @@ func TestItemJson(t *testing.T) {
 		err  error
 	}{
 		{"testdata/55b943ade4b09a3b01b65d78.json", nil},
+		{"testdata/4f4e476ae4b07f02db47e13b.json", nil},
 	}
 
 	for i, c := range cases {

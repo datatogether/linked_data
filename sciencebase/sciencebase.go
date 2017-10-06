@@ -106,8 +106,9 @@ type File struct {
 	OriginalMetadata bool   `json:"originalMetadata"`
 	UseForPreview    bool   `json:"useForPreview"`
 	S3Object         string `json:"s3Object"`
-	Checksum         string `json:"checksum"`
-	Url              string `json:"url"`
+	// screw you poorly specified values
+	Checksum interface{} `json:"checksum"`
+	Url      string      `json:"url"`
 }
 
 type DistLink struct {
