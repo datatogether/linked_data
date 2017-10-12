@@ -1,13 +1,15 @@
-// from https://my.usgs.gov/confluence/display/sciencebase/ScienceBase+Services+and+Models
-// ScienceBase provides a digital data repository for scientific data assets
-// of many different types.
-// This is an evolving capability of ScienceBase, driven by the needs of individual
-// communities who use ScienceBase as their data management platform.
-// Certain types of data such as shapefiles, GeoTIFF images, and a few others are
-// able to be served from the Repository using appropriate types of web service
-// technology (e.g., OGC-WMS, OGC-WCS, etc.) for streaming-type uses in addition to
-// original file downloads.
-
+// sciencebase is a package for working with USGS science data.
+//
+// Details from the sciencebase site:
+//     ScienceBase provides a digital data repository for scientific data assets
+//     of many different types.
+//     This is an evolving capability of ScienceBase, driven by the needs of individual
+//     communities who use ScienceBase as their data management platform.
+//     Certain types of data such as shapefiles, GeoTIFF images, and a few others are
+//     able to be served from the Repository using appropriate types of web service
+//     technology (e.g., OGC-WMS, OGC-WCS, etc.) for streaming-type uses in addition to
+//     original file downloads.
+// more info: https://my.usgs.gov/confluence/display/sciencebase/ScienceBase+Services+and+Models
 package sciencebase
 
 import (
@@ -68,7 +70,9 @@ func (l *Link) JsonUrl() string {
 	if err != nil {
 		return ""
 	}
-	u.Query().Add("format", "json")
+	q := u.Query()
+	q.Set("format", "json")
+	u.RawQuery = q.Encode()
 	return u.String()
 }
 
