@@ -4,13 +4,13 @@
 
 [![GitHub](https://img.shields.io/badge/project-Data_Together-487b57.svg?style=flat-square)](http://github.com/datatogether)
 [![Slack](https://img.shields.io/badge/slack-Archivers-b44e88.svg?style=flat-square)](https://archivers-slack.herokuapp.com/)
-[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](./LICENSE) 
+[![License](https://img.shields.io/github/license/datatogether/linked_data.svg)](./LICENSE) 
 
-`linked_data` is a go package for working with linked data structures, favouring things that parse into and out of [json-ld](https://json-ld.org/). 
+A go package for working with linked data structures, favouring things that parse into and out of [json-ld](https://json-ld.org/). 
 
 ## License & Copyright
 
-Copyright (C) <year> Data Together
+Copyright (C) 2017 Data Together
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation, version 3.0.
@@ -37,4 +37,4 @@ Use in any golang package with:
 
 Build technical documentation with `go doc`.
 
-More documentation to come when we get time. In the meantime, please file issues if you have any questions!. 
+More documentation to come when we get time. In the meantime, please file issues if you have any questions! 
