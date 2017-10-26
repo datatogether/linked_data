@@ -10,7 +10,7 @@ A go package for working with linked data structures, favouring things that pars
 
 ## License & Copyright
 
-Copyright (C) 2017 Data Together
+Copyright (C) 2017 Data Together  
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation, version 3.0.
